@@ -273,6 +273,32 @@ body{
     line-height: 1.4;
     padding-bottom: 6.66667vw;
 }
+.step{
+	width: 1119px;
+	margin: 0, auto;
+	display: flex;
+	list-style: none;
+	justify-content: space-evenly;
+}
+.step li{
+	width: 33.333%;
+}
+.step-band{
+	background-color: #ff2272;
+	padding: 12px, 0px;
+	margin-right: 20px;
+	text-align: center;
+}
+.step-contents{
+	text-align: center;
+}
+
+span{
+	color:#ff2272;
+}
+/* .step-band, img{
+margin: auto;
+} */
 /* グローバルナビ */
 nav{
 	text-align: center;
@@ -304,8 +330,33 @@ nav{
 	color:#F7CB4D;
 	border-bottom:2px solid #F7CB4D;
 	}
-	
+
+/* コース紹介ページ */
+.curriculum-img{
+	width: 16px;
+	height: 16px;
+	background-size: cover;
+}
+.mainContents{
+	float: right;
+	width: 75%;
+	margin: 0, 0, 40px;
+	height: auto;
+	display: block;
+}
+.sideBar{
+	float: left;
+	width: 22%;
+	height: auto;
+	margin-bottom: 30px;
+	display: block;
+}
+.fwrapper-crriculum{
+	clear: both;
+}
+
 /*お問い合わせ*/
+/* contact.html */
 #form_sample6 dd{
 	margin: 10px 0 20px;
 }
@@ -435,7 +486,7 @@ nav{
 /* ########### 1190px以上 ########### */
 @media (min-width: 1190px) {
 	/*全体の横幅を固定*/
-	.box3, .box4, .header, .box6, footer{
+	.box3, .box4, .header, .box6, .footer, .box7{
 		width:1140px;
 		margin-left:auto;
 		margin-right:auto;
