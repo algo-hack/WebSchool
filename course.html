@@ -7,9 +7,41 @@
 <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
 <link rel="stylesheet" href="grid-guide.css">
 <link rel="stylesheet" href="style.css">
+<script src="jquery-3.6.0.min.js"></script>
+<script src="course.js"></script>
 </head>
 
 <body class="wrapper">
+    <h1 id='top'>jQuery でページ内リンクを全てスムーズスクロールにしよう</h1>
+
+  <h2>Table of contents</h2>
+
+  <ul>
+    <li><a href='#section1'>Section 1</a></li>
+    <li><a href='#section2'>Section 2</a></li>
+    <li><a href='#section3'>Section 3</a></li>
+    <li><a href='#section4'>Section 4</a></li>
+  </ul>
+
+  <h2 id='section1'>Section 1</h2>
+  <p class='pad'>Text Text Text Text</p>
+  <a href='#top'>▲top</a>
+
+  <h2 id='section2'>Section 2</h2>
+  <p class='pad'>Text Text Text Text</p>
+  <a href='#top'>▲top</a>
+
+  <h2 id='section3'>Section 3</h2>
+  <p class='pad'>Text Text Text Text</p>
+  <a href='#top'>▲top</a>
+
+  <h2 id='section4'>Section 4</h2>
+  <p class='pad'>Text Text Text Text</p>
+  <a href='#top'>▲top</a>
+
+  <br /><br /><br /><br />
+  <br /><br /><br /><br />
+
     <div class="hwrapper">
         <div class="header">
             <div class="box1">
@@ -41,7 +73,7 @@
 
         </div>
         <div class="main">
-            <div class="curriculum-web">
+            <div class="curriculum-web" id="w">
                 <p class="curriculum-image"><img src="img/img_web.jpg" alt="web" width="168px" height="168px"></p>
                 <div class="curriculum-detail">
                     <div class="course-title">
@@ -54,7 +86,7 @@
                     <p class="btn_course"><a href="#">Web・DTP デザイン コーストップへ</a></p>
                 </div> 
             </div>
-            <div class="curriculum-program">
+            <div class="curriculum-program" id="p">
                 <p class="curriculum-image"><img src="img/img_program.jpg" alt="web" width="168px" height="168px"></p>
                 <div class="curriculum-detail">
                     <div class="course-title">
@@ -67,7 +99,7 @@
                     <p class="btn_course"><a href="#">Web・DTP デザイン コーストップへ</a></p>
                 </div>
             </div>
-            <div class="curriculum-item_office">
+            <div class="curriculum-item_office" id="o">
             <p class="curriculum-image"><img src="img/img_office.jpg" alt="web" width="168px" height="168px"></p>
                 <div class="curriculum-detail">
                     <div class="course-title">
@@ -95,9 +127,9 @@
 
                         
                         <ul class="localNav-sub">
-                            <li><a href="#">Web・DTPデザインコース</a></li>
-                            <li><a href="#">プログラミングコース</a></li>
-                            <li><a href="#">オフィスコース</a></li>
+                            <li><a href="#w">Web・DTPデザインコース</a></li>
+                            <li><a href="#p">プログラミングコース</a></li>
+                            <li><a href="#o">オフィスコース</a></li>
                         </ul>
                     </li>
             </ul>
@@ -120,5 +152,7 @@
     
     </div><!--fwrapper-->
 </div>
+
+<script src="course.js"></script>
 </body>
 </html>
